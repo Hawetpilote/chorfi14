@@ -1,5 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
+import os, sys, time, datetime, random, json
+from multiprocessing.pool import ThreadPool
+try:
+    import mechanize
+except ImportError:
+    os.system('pip2 install mechanize')
+else:
+    try:
+        import requests
+    except ImportError:
+        os.system('pip2 install requests')
 
 import sys
 import mechanize
